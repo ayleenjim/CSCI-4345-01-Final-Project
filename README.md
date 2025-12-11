@@ -20,10 +20,8 @@ There are two main demonstrations:
 
 - **headVM**
   - Role: Ray **head node** (cluster manager)
-  - Example private IP: `10.1.1.5`
 - **workerVM**
   - Role: Ray **worker node**
-  - Example private IP: `10.1.1.6`
 
 Both VMs are in the same Azure Virtual Network and communicate using private IPs. The Ray cluster uses the head node’s private IP and a default Ray port (e.g. `10.1.1.5:6379`).
 
@@ -37,14 +35,14 @@ Both VMs are in the same Azure Virtual Network and communicate using private IPs
                 +------------------+
                 |      headVM      |
                 |  Ray Head Node   |
-                | 10.1.1.5 (priv)  |
+                | 10.x.x.x (priv)  |
                 +---------+--------+
                           |
-                   Azure Virtual Network
-                    (Private IP traffic)
+                Azure Virtual Network
+                (Private IP traffic)
                           |
                 +---------v--------+
                 |    workerVM      |
                 | Ray Worker Node  |
-                | 10.1.1.6 (priv)  |
+                | 10.x.x.x (priv)  |
                 +------------------+
