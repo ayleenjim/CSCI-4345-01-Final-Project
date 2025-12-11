@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Images (optional – remove if you WANT sample images in the repo)
+images/*.jpg
+images/*.jpeg
+images/*.png
+images/processed_*
+
+# Ray logs (if any)
+logs/
+session_latest/
