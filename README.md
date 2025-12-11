@@ -23,7 +23,7 @@ There are two main demonstrations:
 - **workerVM**
   - Role: Ray **worker node**
 
-Both VMs are in the same Azure Virtual Network and communicate using private IPs. The Ray cluster uses the head node’s private IP and a default Ray port (e.g. `10.1.1.5:6379`).
+Both VMs are in the same Azure Virtual Network and communicate using private IPs. The Ray cluster uses the head node’s private IP and a default Ray port (e.g. `10.x.x.x:6379`).
 
 ### High-Level Diagram
 
